@@ -9,11 +9,7 @@ public class ItemPickUpController : MonoBehaviour
 
     int count = 0;
 
-    private void OnEnable()
-    {
-        foreach (var health in item)
-            health.OnItemPickUp += Health;
-    }
+
 
     void Health(ItemPickUps health)
     {
