@@ -71,10 +71,6 @@ public class PlayerController : MonoBehaviour
 			rb.velocity = new Vector2(rb.velocity.x, jumpForce);
 			isGrounded = false;
 
-			AchievementManager.achievement.jumpTimes += 1;
-
-			if (TutorialManager.instance.dQuest == true)
-				TutorialManager.instance.jumpQuest = true;
 		}
 	}
 
